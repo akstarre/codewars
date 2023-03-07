@@ -9,25 +9,18 @@
 // Complete the function which tests if a positive integer n is Harshad number, and returns True if the product of its digit sum and its digit sum reversed equals n; otherwise return False.
 
 //SOLUTION
-function numberJoy(n) {
-    let num = n
-    let forward = n.toString()
-        .split("")
-        .map(ele => Number(ele))
-        .reduce(((acc, ele) => acc += ele),0)
-    let backward = forward.toString()
-        .split('')
-        .reverse()
-        .join('')
-
-        if (Number(forward) * Number(backward) == n) {
-            return true
-        } else {
-            return false
-        }
+    function numberJoy(n) {
         
-    return backward
-
+        let forward = n.toString()
+            .split("")
+            .map(ele => Number(ele))
+            .reduce(((acc, ele) => acc += ele),0)
+        let backward = forward.toString()
+            .split('')
+            .reverse()
+            .join('')
+    
+     return Number(forward) * Number(backward) == n ? true : false
 }
 
 //TESTING

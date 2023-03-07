@@ -15,6 +15,17 @@ function sumTwoSmallestNumbers(numbers) {
     return result.reduce(((ele, acc) => acc += ele), 0)
   }
 
+//Solution 2
+function sumTwoSmallestNumbers(numbers) {
+  return numbers.sort((a, b) => a-b)
+    .reduce(((sum, num, i) => {
+      if(i < 2) {
+        sum += num
+      }
+      return sum
+    }), 0)
+  }
+
 //TESTING
 let arr1 = [15, 28, 4, 2, 43]
 console.log(sumTwoSmallestNumbers(arr1))

@@ -16,9 +16,6 @@
 //Solution
 
 function isPrime(num){
-    let test = []
-    let result = []
-
     if (num < 2) return false
     const limit = Math.sqrt(num)
     for (i=2;i<=limit;++i){
@@ -28,5 +25,6 @@ function isPrime(num){
     }
     return true
 }
+
 //testing
 console.log(isPrime(5099))
