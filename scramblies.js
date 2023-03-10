@@ -27,14 +27,19 @@
 //   }
 
 //Solution 2
-function scramble (str1, str2){
-    let arry1 = str1.split('').sort()
-    let arry2 = str2.split('').sort()
-    let first = arry2[0]
-    let last = arry2[str2.length -1]
-    arry1 = arry1.slice(arry1.indexOf(first), arry1.lastIndexOf(last))
-    return arry1
-}
+function scramble(str1, str2) {
+    let str1Hash = {}
+    let containsScramble = true
+    for (const char1 of str1) {
+      str1Hash[char1] ? str1Hash[char1] += 1 : str1Hash[char1] = 1
+    }
+    
+    for (const char2 of str2) {
+      str1Hash[char2] ? str1Hash[char2] -= 1 : containsScramble = false
+    }
+    
+    return containsScramble
+   }
 
 //TESTING
 console.log(scramble('rkqodlw',           'world'      )) //true
