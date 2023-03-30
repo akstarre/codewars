@@ -15,10 +15,10 @@
 
 function twoSum(numbers, target) {
     let result = []
-    numbers.forEach((element, index) => {
+    numbers.forEach((number, index) => {
         for (i=0;i<numbers.length;i++){
             if(index !== i && result.length < 2) {
-                if(element + numbers[i] == target) {
+                if(number + numbers[i] == target) {
                     result.push(index)
                     result.push(i)
                 }

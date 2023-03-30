@@ -32,6 +32,7 @@ function titleCase (title, minorWords) {
         })
         .join(' ')
 }
+
 //TESTING
 
 let title1 = "THE WIND IN THE WILLOWS"

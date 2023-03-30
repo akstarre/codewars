@@ -44,4 +44,4 @@ function cutRope(length, m, n) {
 
 // TESTING
 
-console.log(cutRope(2, 2, 3))
+console.log(cutRope(10, 2, 3))
