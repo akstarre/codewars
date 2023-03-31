@@ -41,6 +41,19 @@ function cutRope(length, m, n) {
   
   }
 
+  function cutRope(length, m, n) {
+    let last = 0
+    let lens = {}
+
+    for (i=0;i<=length;i++){
+      if(i === length || i % m === 0 || i % n === 0){
+        lens[(i-last) + 'cm'] = (lens[(i-last) + 'cm'] || 0) +1;
+        last = i
+      }
+    }
+    return lens
+  }
+
 
 // TESTING
 
