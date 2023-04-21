@@ -17,21 +17,19 @@
 
 // SOLUTION
 
-function trim(str, size) {
-   let short = str.split('')
-        .filter((letter, i) => i <= (size-1))
-        .join('')
-    if (str.length < 4){
-        return short.concat('...')
-    } else if (str.length < size){
-        return str
-    } else {
-        return short.split('')
-            .filter((letter, i) => i < (short.length -3))
-            .join('')
-            .concat('...')
-    }
-  }
-
+const trim = (str, size) => {
+    let short = str.split('')
+         .filter((letter, i) => i <= (size-1))
+         .join('')
+     if ((str.length <= 3 || size <= 3) && str.length > size){
+         return short.concat('...')
+     } else if (str.length <= size){
+         return str
+     } else {
+         return short.split('')
+             .filter((letter, i) => i < (short.length -3))
+             .join('')
+             .concat('...')
+     }
+   }
  
-  console.log(trim('He', 1))
