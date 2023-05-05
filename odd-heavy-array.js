@@ -38,3 +38,7 @@ function isOddHeavy(n){
 
   let arry = [11,4,9,2,3,10]
   console.log(isOddHeavy(arry))
+
+  for(i=0; i++; i<num.length) {
+    
+  }
