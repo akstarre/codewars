@@ -43,3 +43,5 @@ function arrayPacking(a) {
 
   let ar = [24, 85, 0]
 console.log(arrayPacking(ar))
+
+
