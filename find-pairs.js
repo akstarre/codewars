@@ -14,4 +14,5 @@ const findSumPairs = (arr, value) => {
     }
     return result
 };
+
 console.log(findSumPairs(arr, 16));
