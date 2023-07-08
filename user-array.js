@@ -20,3 +20,4 @@ let users = [
     { id: 5, score: 42 }, 
     { id: 6, score: 55 },]
 console.log(getWinner(users))
+
