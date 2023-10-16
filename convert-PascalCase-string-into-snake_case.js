@@ -10,20 +10,20 @@
 // SOLUTION
 
 
-// function toUnderscore(string) {
-//     if (!isNaN(string))
-//       return string;
+function toUnderscore(string) {
+    if (!isNaN(string))
+      return string;
       
-//     var charArr = string.split('');
+    var charArr = string.split('');
     
-//     var snakeWord = '';
-//     for (var i=0; i<charArr.length; i++) {
-//       snakeWord += charArr[i].toLowerCase();
-//       if (i+1 < charArr.length) {
-//         if (isNaN(charArr[i+1]) && charArr[i+1] === charArr[i+1].toUpperCase()) {
-//           snakeWord += '_';
-//         }
-//       }
-//     }
-//     return snakeWord;
-//   }
+    var snakeWord = '';
+    for (var i=0; i<charArr.length; i++) {
+      snakeWord += charArr[i].toLowerCase();
+      if (i+1 < charArr.length) {
+        if (isNaN(charArr[i+1]) && charArr[i+1] === charArr[i+1].toUpperCase()) {
+          snakeWord += '_';
+        }
+      }
+    }
+    return snakeWord;
+  }
