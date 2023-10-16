@@ -9,7 +9,6 @@ const getLargeNumbers = (a, b) => {
         }
     }
 return result
-
 }
 
     let a = [13, 64, 15, 17, 88]
