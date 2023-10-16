@@ -6,6 +6,4 @@ const sumAverage = (arry) => {
     return Math.floor(arry.map((arry) => arry.reduce((acc, num)=> acc += num) / arry.length).reduce((acc, ave) => acc += ave))
 }
 
-
-
 console.log(sumAverage(arry))
