@@ -21,3 +21,4 @@ function subsetA(arr) {
         
     }
     return arrA.sort((a,b) => a-b)
+}
