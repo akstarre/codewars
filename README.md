@@ -6,11 +6,11 @@ Absolutely, here's a README tailored for a repository dedicated to CodeWars chal
 
 ![CodeWars Rank](https://www.codewars.com/users/akstarre/badges/large)
 
-Welcome to my dedicated repository where I document my journey of solving CodeWars challenges daily. Through these challenges, I hone my problem-solving skills, learn new techniques, and demonstrate my fluency in code.
+Welcome to my dedicated repository where I document my journey of solving CodeWars and other coding challenges I find. Through these challenges, I hone my problem-solving skills, learn new techniques, and demonstrate my fluency in code.
 
 ## 🎯 Motivation
 
-Coding is as much an art as it is a science. By committing to these challenges daily, I aim to:
+Coding is as much an art as it is a science. By committing to these challenges, I aim to:
 
 1. **Hone My Skills**: Practice makes perfect. Regular coding exercises help me improve my coding efficiency and algorithmic thinking.
 2. **Learn Continuously**: With each challenge, I discover new methods, algorithms, and best practices.
