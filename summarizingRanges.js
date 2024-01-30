@@ -11,25 +11,26 @@
 //Solutions:
 const summaryRanges = (num) => {
   let result = [];
-  let current = [];
-  for (let i = 0; i < num.length; i++) {
-    if (num[i] === num[i + 1] || num[i] + 1 === num[i + 1]) {
-      current.push(num[i]);
-    } else if (num[i + 1] > num[i] + 1 || num[i] === num[num.length - 1]) {
-      current.push(num[i]);
-      let max = Math.max(...current);
-      let min = Math.min(...current);
+  let set = [];
 
+  for (let i = 0; i < num.length; i++) {
+    let current = num[i];
+    let next = num[i + 1];
+    let previous = num[i - 1];
+    let last = num[num.length - 1];
+
+    if (current === next || current + 1 === next) {
+      set.push(current);
+    } else if (next > current + 1 || current === last) {
+      set.push(current);
+      let max = Math.max(...set);
+      let min = Math.min(...set);
       if (max !== min) {
         result.push(`${min}->${max}`);
-        current = [];
+        set = [];
       } else {
         result.push(`${max}`);
-        current = [];
-      }
-    } else if (num[i] === num[num.length - 1]) {
-      if (num[i] !== num[i - 1] || num[i] - 1 !== num[i - 1]) {
-        result.push(`${num[i]}`);
+        set = [];
       }
     }
   }
